@@ -1,0 +1,4 @@
+FROM centos
+RUN yum -y update && yum install -y passwd && yum install -y cracklib-dicts && yum install -y nano
+RUN adduser rmp && adduser rmp2
+COPY 1.sh .
